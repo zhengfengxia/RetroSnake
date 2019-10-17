@@ -1,0 +1,94 @@
+.content{
+    width: 640px;
+    height: 640px;
+    margin: 100px auto;
+    position: relative;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+.btn button{
+    background: none;
+    border: none;
+    background-size: 100% 100%;
+    cursor: pointer;
+    outline: none;
+    /* 居中 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.startBtn button{
+    width: 200px;
+    height: 80px;
+    margin-left: -100px;
+    margin-top: -40px;
+    background-image: url(./img/startGame.png);
+}
+.pauseBtn{
+    display: none;
+}
+.pauseBtn button{
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+    background-image: url(./img/start.png);
+}
+
+/* snakeWrap */
+#snakeWrap{
+    width: 600px;
+    height: 600px;
+    background-color: #225675;
+    border: 20px solid #7dd9ff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#snakeWrap div{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.snakeHead{
+    background-image: url(./img/snake.png);
+    background-size: cover;
+}
+.snakeBody{
+    background-color: #9ddbb1;
+    border-radius: 50%;
+}
+.food{
+    background-image: url(./img/food.png);
+    background-size: cover;
+}
+
+
+/* 分数区 */
+.score{
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    left: 100px;
+    top: 100px;
+}
+.score h2{
+    font-weight: bolder;
+    color: cadetblue;
+    font-size: 38px;
+    text-align: center;
+}
+.score span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
